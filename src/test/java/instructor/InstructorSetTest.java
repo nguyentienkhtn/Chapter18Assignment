@@ -37,6 +37,9 @@ class InstructorSetTest {
         Iterator<Instructor> instructorIterator = instructorJavaSet.iterator();
         while(instructorIterator.hasNext())
             str += instructorIterator.next().toString() + " ";
+        instructorSet.add(instructor1);
+        instructorSet.add(instructor2);
+        instructorSet.add(instructor3);
 
     }
 
