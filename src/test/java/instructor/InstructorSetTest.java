@@ -17,6 +17,12 @@ class InstructorSetTest {
     Set<Instructor> instructorJavaSet = new HashSet<>();
     String str = "";
 
+//    @BeforeAll
+//    static void beforeAll() {
+//        System.out.println("Before all");
+//    }
+
+
 
     @BeforeEach
     void setUp() {
