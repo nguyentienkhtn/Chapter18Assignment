@@ -20,6 +20,7 @@ class InstructorSetTest {
 
     @BeforeEach
     void setUp() {
+        System.out.println("setUp1");
         instructorSet = new InstructorSet();
         instructor1 = new Instructor("Pf", "1", "111");
         instructor2 = new Instructor("Pf", "2", "103");
@@ -35,7 +36,8 @@ class InstructorSetTest {
 
     @Test
     @Order(1)
-    void add() {
+    public void add() {
+        System.out.println("add");
         instructorSet.add(instructor1);
         instructorSet.add(instructor2);
         instructorSet.add(instructor3);
@@ -44,19 +46,21 @@ class InstructorSetTest {
 
     @Test
     @Order(2)
-    void testToString() {
+    public void testToString() {
+        System.out.println("ToString");
         assertEquals(str, instructorSet.toString());
     }
 
     @Test
     @Order(2)
-    void search1() {
+    public void search1() {
+        System.out.println("search1");
         Assertions.assertEquals(true, instructorSet.search(instructor1));
     }
     @Test
     @Order(2)
-    void search2() {
-
+    public void search2() {
+        System.out.println("search2");
         Assertions.assertEquals(false, instructorSet.search(new Instructor("Nguyen", "Duc", "306")));
     }
 }

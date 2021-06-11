@@ -5,7 +5,11 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class InstructorSet {
-    private Set<Instructor> instructorSet = new HashSet<>();
+    private Set<Instructor> instructorSet;
+
+    public InstructorSet() {
+        this.instructorSet = new HashSet<>();
+    }
 
     public void add(Instructor instructor)
     {
