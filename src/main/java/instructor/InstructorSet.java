@@ -5,28 +5,34 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class InstructorSet {
-    private Set<Instructor> instructorSet;
 
-    public InstructorSet() {
-        this.instructorSet = new HashSet<>();
-    }
-
+    /**
+     * add an instructor to the set
+     * @param instructor to add
+     */
     public void add(Instructor instructor)
     {
-        instructorSet.add(instructor);
-    }
-    public String toString()
-    {
-        String str = "";
-        Iterator<Instructor> instructorIterator = instructorSet.iterator();
-        while(instructorIterator.hasNext())
-            str += instructorIterator.next().toString() + " ";
-        System.out.println(str);
-        return str;
+
     }
 
+    /**
+     *
+     * @return a String that contains all information of the instructors contained in the set
+     * each instructor's information is separated by a SPACE
+     */
+    public String toString()
+    {
+        return null;
+    }
+
+    /**
+     * search for a specific instructor
+     * @param instructor to search
+     * @return true if the search instructor is in the set, false otherwise
+     */
     public boolean search(Instructor instructor)
     {
-        return instructorSet.contains(instructor);
+        return false;
+
     }
 }

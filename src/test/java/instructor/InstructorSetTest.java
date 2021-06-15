@@ -44,20 +44,10 @@ class InstructorSetTest {
     }
 
     @Test
-    @Order(1)
-    public void add() {
-        System.out.println("add");
-        instructorSet.add(instructor1);
-        instructorSet.add(instructor2);
-        instructorSet.add(instructor3);
-        Assertions.assertTrue(true);
-    }
-
-    @Test
     @Order(2)
     public void testToString() {
-        System.out.println("ToString");
-        assertEquals(str, instructorSet.toString());
+
+        assertEquals(str.trim(), instructorSet.toString());
     }
 
     @Test

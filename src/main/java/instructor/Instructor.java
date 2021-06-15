@@ -78,9 +78,7 @@ public class Instructor
    
    public int hashCode()
    {
-      return ((lastName.hashCode() * 100) + 
-              (firstName.hashCode() * 10) +
-               officeNumber.hashCode());
+      return 0;
    }
    
    /**
@@ -91,20 +89,6 @@ public class Instructor
    
    public boolean equals(Object obj)
    {
-      // First make sure obj is an instructor.Instructor object.
-      if (!(obj instanceof Instructor))
-         return false;
-      
-      // Assign the argument to an instructor.Instructor variable.
-      Instructor temp = (Instructor)obj;
-      
-      // If the fields are the same then the argument
-      // is equal to this object.
-      if (lastName.equals(temp.lastName) &&
-          firstName.equals(temp.firstName) &&
-          officeNumber.equals(temp.officeNumber))
-         return true;
-      else
-         return false;
+      return false;
    }
 }
